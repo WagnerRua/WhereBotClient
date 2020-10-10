@@ -1,0 +1,310 @@
+.profile-container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 30px;
+  margin: 20px auto;
+}
+
+.profile-container header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container header span {
+  color: #238956;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.profile-container header img {
+  height: 64px;
+}
+
+.profile-container header .button {
+  width: 200px;
+  margin-top: 0;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profile-container header .logout-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  border: 1px solid #dcdce6;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+}
+
+.profile-container header .logout-btn:hover {
+  border-color: #999;
+}
+
+.profile-container h1 {
+  color: #238956;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.profile-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  list-style: none;
+}
+
+.profile-container ul li {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.profile-container ul li button {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border: 0;
+  transition: opacity 0.2s;
+}
+
+.profile-container ul li button:hover {
+  opacity: 0.8;
+}
+
+.profile-container ul li strong {
+  color: #41414d;
+}
+
+.profile-container ul li p + strong {
+  margin-top: 32px;
+}
+
+.profile-container ul li p {
+  color: #737380;
+  line-height: 21px;
+  font-size: 18px;   
+  margin: 10px 0px;
+}
+
+.profile-container ul img {
+  max-width: 120px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.image-div {
+  max-width: 100%;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  margin-left: auto;
+  max-width: 350px;
+  padding: 10px;
+}
+
+.robot-key-input{
+  width: 250px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.robots-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+  list-style: none;
+}
+
+.robots-info ul li p {
+  margin-top: 0px;
+}
+
+.delete-btn {
+  background-color: transparent;
+}
+
+.start-btn {
+  background: #238956;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.heatmap-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.9);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -moz-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -o-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+}
+
+.heatmap {
+  padding: 50px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  position: relative;
+}
+
+.heatmap img {
+  max-width:100%; 
+  height:auto
+}
+
+.heatmap button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: bold;
+  background-color: transparent;
+  border-color: transparent;
+  max-height: 14px;
+}
+
+
+body.react-confirm-alert-body-element {
+  overflow: hidden;
+}
+
+.react-confirm-alert-blur {
+  filter: url(#gaussian-blur);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.react-confirm-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.9);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -moz-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -o-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+}
+
+.react-confirm-alert-body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  padding: 30px;
+  text-align: left;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  color: #666;
+}
+
+.react-confirm-alert-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.react-confirm-alert-body > h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: black;
+}
+
+.react-confirm-alert-body > h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.react-confirm-alert-button-group {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.react-confirm-alert-button-group > button {
+  outline: none;
+  background: #238956;
+  border: none;
+  display: inline-block;
+  padding: 6px 18px;
+  color: #eee;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
