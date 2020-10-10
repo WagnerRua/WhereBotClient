@@ -35,8 +35,7 @@ export default function Dashboard(){
   }
 
   useEffect(() => {
-    const socket = io('https://wherebot-backend.herokuapp.com/');
-    //const socket = io('http://localhost:8080');
+    const socket = io(process.env.REACT_APP_SERVER_URL);
 
     socket.emit("user.id", {id: authenticatedUser._id});
 
