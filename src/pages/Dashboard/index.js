@@ -69,7 +69,7 @@ export default function Dashboard(){
     e.preventDefault();
 
     try{
-      await api.put('/robot/link-key', {robotID});
+      await api.put('/robot/link-key', {robotID}, { headers : { Authorization: api.defaults.headers.common['Authorization']}});
       confirmAlert({
         message: `Robot key link success.`,
         buttons: [ { label: "Close" }]
