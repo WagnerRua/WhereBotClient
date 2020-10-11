@@ -31,7 +31,9 @@ export default function Dashboard(){
       const response = await api.post('/survey/index', {robotID: robot}, { headers : { Authorization: api.defaults.headers.common['Authorization']}});
       response.data.surveysArray.forEach((value) => { array.push(value); });
     }
-    setSurveys(array.reverse());
+
+    array.sort(function(a,b){return new Date(b.createdAt) - new Date(a.createdAt);});
+    setSurveys(array);
   }
 
   useEffect(() => {
@@ -43,7 +45,7 @@ export default function Dashboard(){
       getSurveys();
 
       confirmAlert({
-        message: 'Um novo Site Survey foi adicionado!!!',
+        message: 'A new Site Survey was added !!!',
         buttons: [
           { label: "Close" }
         ]
